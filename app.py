@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Configura tu clave de API de OpenAI
-openai.api_key = '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'
+openai.api_key = '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'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
