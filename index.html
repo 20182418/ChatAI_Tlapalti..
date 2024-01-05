@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Chat</title>
+</head>
+<body>
+    <h1>OpenAI Chat</h1>
+    <form action="/" method="post">
+        <label for="user_input">Usuario:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if user_input %}
+        <p><strong>Usuario:</strong> {{ user_input }}</p>
+        <p><strong>IA:</strong> {{ ai_output }}</p>
+    {% endif %}
+</body>
+</html>
